@@ -153,6 +153,22 @@
 <property name= "text" value="Friday, what time is it?"/>
 <property name= "moment" value="2019/09/09 12:15"/>
 </bean>
+ 
+ <!-- Announcement -->
+<bean id="announcement01" class="acme.entities.announcements.Announcement">
+<property name= "title" value="Ejemplo de anuncio 1"/>
+<property name= "moment" value="2019/10/09 10:00"/>
+<property name= "moreInfo"><null/></property>
+<property name= "text" value="Descripción de un anuncio"/>
+</bean>
+  
+<bean id="announcement02" class="acme.entities.announcements.Announcement">
+<property name= "title" value="Anuncio 2"/>
+<property name= "moment" value="2019/09/09 12:15"/>
+<property name= "moreInfo" value="http://www.google.es"/>
+<property name= "text" value="Descripción de un anuncio"/>
+
+</bean>
   
 
 </beans>
