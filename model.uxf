@@ -371,4 +371,20 @@ has v</panel_attributes>
 + text: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>742</x>
+      <y>350</y>
+      <w>147</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>Announcement
+--
++ title: String{NotBlank}
++ moment: Date{Temporal (TIMESTAMP),Past}
++ moreInfo: String {URL}
++ text: String {NotBlank}</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>

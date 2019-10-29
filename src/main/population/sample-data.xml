@@ -155,4 +155,28 @@
 </bean>
   
 
+<!-- Announcements -->
+<bean id="announcement01" class="acme.entities.announcements.Announcement">
+<property name="title" value="Sample announcement 01"/>
+<property name="moment" value="2019/03/12 12:58"/>
+<property name="moreInfo"><null/></property>
+<property name="text" value="This is a sample announcement" />
+
+</bean>
+
+<bean id="announcement02" class="acme.entities.announcements.Announcement">
+<property name="title" value="Sample announcement 02"/>
+<property name="moment" value="2019/03/12 23:18"/>
+<property name="moreInfo"><null/></property>
+<property name="text" value="Second sample announcement" />
+
+</bean>
+<bean id="announcement03" class="acme.entities.announcements.Announcement">
+<property name="title" value="Sample announcement 03"/>
+<property name="moment" value="2019/03/12 05:43"/>
+<property name="moreInfo"><null/></property>
+<property name="text" value="3º sample announcement" />
+
+</bean>
+
 </beans>
