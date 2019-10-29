@@ -16,7 +16,7 @@ master.banner.background = #FFE97F
 
 master.welcome.title = Welcome!
 master.welcome.text = \
-	Welcome to Starter Project! Never before has it bee easier to get your \
+	Welcome to Acme Jobs! Never before has it bee easier to get your \
 	project up and running!
 
 # master.menu #################################################################
@@ -30,6 +30,9 @@ master.menu.sign-out = Sign out
 
 master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link = Favourite link
+master.menu.anonymous.javi-link = Javi link
+master.menu.anonymous.angel-link = Angel link
+master.menu.anonymous.flor-link = Flor link
 
 # master.menu.administrator ###################################################
 
@@ -41,11 +44,17 @@ master.menu.administrator.shutdown = Shut down
 
 master.menu.provider = Provider
 master.menu.provider.favourite-link = Favourite link
+master.menu.provider.javi-link = Javi link
+master.menu.provider.angel-link = Angel link
+master.menu.provider.flor-link = Flor link
 
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumer
 master.menu.consumer.favourite-link = Favourite link
+master.menu.consumer.javi-link = Javi link
+master.menu.consumer.angel-link = Angel link
+master.menu.consumer.flor-link = Flor link
 
 # master.menu.user-account ####################################################
 
@@ -72,7 +81,7 @@ master.footer.label.spanish = Spanish
 
 master.company.title = La compañía
 master.company.text = \
-	Starter Project, Inc. is a fictitious fictitious company that provides a \
+	Acme Jobs, Inc. is a fictitious fictitious company that provides a \
 	starter project for the students of the Design and Testing subject of the \
 	Software Engineering Curriculum of the University of Sevilla.
 master.company.name = Starter Project, Inc.
