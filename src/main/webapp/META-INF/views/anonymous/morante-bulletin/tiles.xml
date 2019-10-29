@@ -18,12 +18,12 @@
 
 <tiles-definitions>
 
-	<definition name="anonymous/shout/form" extends="master">		
-		<put-attribute name="body" type="template" value="../anonymous/shout/form.jsp" />
+	<definition name="anonymous/morante-bulletin/form" extends="master">		
+		<put-attribute name="body" type="template" value="../anonymous/morante-bulletin/form.jsp" />
 	</definition>
 
-	<definition name="anonymous/shout/list" extends="master">		
-		<put-attribute name="body" type="template" value="../anonymous/shout/list.jsp" />
+	<definition name="anonymous/morante-bulletin/list" extends="master">		
+		<put-attribute name="body" type="template" value="../anonymous/morante-bulletin/list.jsp" />
 	</definition>
 
-</tiles-definitions>
+</tiles-definitions> 

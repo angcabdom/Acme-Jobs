@@ -18,12 +18,12 @@
 
 <tiles-definitions>
 
-	<definition name="anonymous/shout/form" extends="master">		
-		<put-attribute name="body" type="template" value="../anonymous/shout/form.jsp" />
+	<definition name="anonymous/granja-bulletin/form" extends="master">		
+		<put-attribute name="body" type="template" value="../anonymous/granja-bulletin/form.jsp" />
 	</definition>
 
-	<definition name="anonymous/shout/list" extends="master">		
-		<put-attribute name="body" type="template" value="../anonymous/shout/list.jsp" />
+	<definition name="anonymous/granja-bulletin/list" extends="master">		
+		<put-attribute name="body" type="template" value="../anonymous/granja-bulletin/list.jsp" />
 	</definition>
 
-</tiles-definitions>
+</tiles-definitions> 
