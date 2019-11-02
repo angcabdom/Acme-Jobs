@@ -1,15 +1,3 @@
-/*
- * AuthenticatedAnnouncementUpdateService.java
- *
- * Copyright (c) 2019 Rafael Corchuelo.
- *
- * In keeping with the traditional purpose of furthering education and research, it is
- * the policy of the copyright owner to permit non-commercial use and redistribution of
- * this software. It has been tested carefully, but it is not guaranteed for any particular
- * purposes. The copyright owner does not offer any warranties or representations, nor do
- * they accept any liabilities with respect to them.
- */
-
 package acme.features.authenticated.announcement;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,13 +12,14 @@ import acme.framework.services.AbstractShowService;
 @Service
 public class AuthenticatedAnnouncementShowService implements AbstractShowService<Authenticated, Announcement> {
 
-	// Internal state ---------------------------------------------------------
+	// Internal State ------------------------------------------------------
 
 	@Autowired
 	AuthenticatedAnnouncementRepository repository;
 
 
-	// AbstractUpdateService<Authenticated, Announcement> interface ------------
+
+	// AbstractListService<Authenticated, Announcemen> interface ------------
 
 	@Override
 	public boolean authorise(final Request<Announcement> request) {
@@ -45,14 +34,14 @@ public class AuthenticatedAnnouncementShowService implements AbstractShowService
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "moment", "moreInfo", "text");
+		request.unbind(entity, model, "moment", "title", "moreInfo", "text");
 
 	}
 
 	@Override
 	public Announcement findOne(final Request<Announcement> request) {
 		assert request != null;
-
+    
 		Announcement result;
 		int id;
 
@@ -63,3 +52,4 @@ public class AuthenticatedAnnouncementShowService implements AbstractShowService
 	}
 
 }
+

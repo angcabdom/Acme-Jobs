@@ -1,4 +1,3 @@
-
 package acme.entities.announcements;
 
 import java.util.Date;
@@ -18,21 +17,25 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-
 public class Announcement extends DomainEntity {
 
+	//serialisation identifier
 	private static final long	serialVersionUID	= 1L;
 
+	//atributos
 	@NotBlank
 	private String				title;
+
+	@NotBlank
+	private String				text;
+
+	@URL
+	private String				moreInfo;
 
 	@Temporal(TemporalType.TIMESTAMP)
 	@Past
 	private Date				moment;
 
-	@URL
-	private String				moreInfo;
 
-	@NotBlank
-	private String				text;
 }
+
