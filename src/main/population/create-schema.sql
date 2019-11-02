@@ -6,6 +6,16 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `announcement` (
+       `id` integer not null,
+        `version` integer not null,
+        `moment` datetime(6),
+        `more_info` varchar(255),
+        `text` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `anonymous` (
        `id` integer not null,
         `version` integer not null,
@@ -20,12 +30,48 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `caballero_bulletin` (
+       `id` integer not null,
+        `version` integer not null,
+        `author` varchar(255),
+        `moment` datetime(6),
+        `text` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `consumer` (
        `id` integer not null,
         `version` integer not null,
         `user_account_id` integer,
         `company` varchar(255),
         `sector` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `correa_bulletin` (
+       `id` integer not null,
+        `version` integer not null,
+        `author` varchar(255),
+        `moment` datetime(6),
+        `text` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `granja_bulletin` (
+       `id` integer not null,
+        `version` integer not null,
+        `author` varchar(255),
+        `moment` datetime(6),
+        `text` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `morante_bulletin` (
+       `id` integer not null,
+        `version` integer not null,
+        `author` varchar(255),
+        `moment` datetime(6),
+        `text` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 

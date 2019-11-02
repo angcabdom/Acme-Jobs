@@ -173,3 +173,216 @@
   
 
 </beans>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+- sample-data.xml
+-
+- Copyright (c) 2019 Rafael Corchuelo.
+-
+- In keeping with the traditional purpose of furthering education and research, it is
+- the policy of the copyright owner to permit non-commercial use and redistribution of
+- this software. It has been tested carefully, but it is not guaranteed for any particular
+- purposes.  The copyright owner does not offer any warranties or representations, nor do
+- they accept any liabilities with respect to them.
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<import resource="conversion-service.xml" />
+
+<!--  Shouts -->
+
+<bean id="shout01" class="acme.entities.shouts.Shout">
+<property name="author" value="John Doe"/>
+<property name="text" value="I'm happy!"/>
+<property name= "moment" value="2019/09/09 10:00"/>
+</bean>
+
+<bean id="shout02" class="acme.entities.shouts.Shout">
+<property name="author" value="Jane Doe"/>
+<property name="text" value="I'm the master of my room!"/>
+<property name= "moment" value="2019/08/09 15:55"/>
+</bean>
+
+<bean id="shout03" class="acme.entities.shouts.Shout">
+<property name="author" value="Foo Bar"/>
+<property name="text" value="I'm 20..."/>
+<property name= "moment" value="2019/09/07 00:00"/>
+</bean>
+
+<bean id="shout04" class="acme.entities.shouts.Shout">
+<property name="author" value="Peter McCain"/>
+<property name="text" value="Where am I?"/>
+<property name= "moment" value="2019/04/05 17:25"/>
+</bean>
+
+<bean id="shout05" class="acme.entities.shouts.Shout">
+<property name="author" value="Tony Montana"/>
+<property name="text" value="Who put this thing together?"/>
+<property name= "moment" value="2019/07/26 20:19"/>
+</bean>
+
+<bean id="shout06" class="acme.entities.shouts.Shout">
+<property name="author" value="Freddy Krueger"/>
+<property name="text" value="You can check in, but you can't check out"/>
+<property name= "moment" value="2019/02/17 05:14"/>
+</bean>
+ 
+<bean id="shout07" class="acme.entities.shouts.Shout">
+<property name= "author" value="Julián Pérez"/>
+<property name= "text" value="¿Qué es esto?"/>
+<property name= "moment" value="2019/09/09 03:14"/>
+</bean>
+
+<bean id="shout08" class="acme.entities.shouts.Shout">
+<property name= "author" value="Juan Carlos Serrano"/>
+<property name= "text" value="Mi primer Shout"/>
+<property name= "moment" value="2019/10/09 11:00"/>
+</bean>
+  
+<bean id="shout09" class="acme.entities.shouts.Shout">
+<property name= "author" value="Stefan Parker"/>
+<property name= "text" value="I'm looking for a Job"/>
+<property name= "moment" value="2019/09/09 11:00"/>
+</bean>
+  
+ <bean id="shout10" class="acme.entities.shouts.Shout">
+<property name= "author" value="Antonio Jesus"/>
+<property name= "text" value="Pero madre mia Willy que haces aqui compañero"/>
+<property name= "moment" value="2019/09/09 05:44"/>
+</bean>
+
+<bean id="shout11" class="acme.entities.shouts.Shout">
+<property name= "author" value="Monolo 72"/>
+<property name= "text" value="Buenas!!"/>
+<property name= "moment" value="2019/10/09 10:00"/>
+</bean>
+  
+<bean id="shout12" class="acme.entities.shouts.Shout">
+<property name= "author" value="Peter Parker"/>
+<property name= "text" value="I'm Spiderman"/>
+<property name= "moment" value="2019/09/09 12:15"/>
+</bean>
+
+
+<!--  CaballeroBulletins -->
+
+<bean id="caballeroBulletin01" class="acme.entities.caballeroBulletins.CaballeroBulletin">
+<property name="author" value="Michael Myers"/>
+<property name="text" value="..."/>
+<property name= "moment" value="2018/10/31 23:59"/>
+</bean>
+
+<bean id="caballeroBulletin02" class="acme.entities.caballeroBulletins.CaballeroBulletin">
+<property name="author" value="Jimmy"/>
+<property name="text" value="I like that!"/>
+<property name= "moment" value="2019/04/09 18:35"/>
+</bean>
+
+<bean id="caballeroBulletin03" class="acme.entities.caballeroBulletins.CaballeroBulletin">
+<property name="author" value="Chuck"/>
+<property name="text" value="I see your point"/>
+<property name= "moment" value="2019/09/12 19:45"/>
+</bean>
+
+
+<!-- CorreaBulletin -->
+<bean id="correaBulletin01" class="acme.entities.correaBulletins.CorreaBulletin">
+<property name= "author" value="J.J"/>
+<property name= "text" value="New shout"/>
+<property name= "moment" value="2019/09/09 23:15"/>
+</bean>  
+
+<bean id="correaBulletin02" class="acme.entities.correaBulletins.CorreaBulletin">
+<property name= "author" value="R.L"/>
+<property name= "text" value="Fashion victim"/>
+<property name= "moment" value="2019/09/10 23:15"/>
+</bean>
+
+
+<!--  GranjaBulletin -->
+
+<bean id="granjaBulletin01" class="acme.entities.granjaBulletins.GranjaBulletin">
+ <property name= "author" value="Monolo 72"/>
+<property name= "text" value="Buenas!!"/>
+<property name= "moment" value="2019/10/09 10:00"/>
+</bean>
+ 
+<bean id="granjaBulletin02" class="acme.entities.granjaBulletins.GranjaBulletin">
+<property name= "author" value="Peter Parker"/>
+<property name= "text" value="I'm Spiderman"/>
+<property name= "moment" value="2019/09/09 12:15"/>
+</bean>
+
+<!-- MoranteBulletin -->
+<bean id="moranteBulletin01" class="acme.entities.moranteBulletins.MoranteBulletin">
+<property name= "author" value="Monolo 72"/>
+<property name= "text" value="Buenas!!"/>
+<property name= "moment" value="2019/10/09 10:00"/>
+</bean>
+  
+<bean id="moranteBulletin02" class="acme.entities.moranteBulletins.MoranteBulletin">
+<property name= "author" value="Tony Stark"/>
+<property name= "text" value="Friday, what time is it?"/>
+<property name= "moment" value="2019/09/09 12:15"/>
+</bean>
+ 
+ <!-- Announcement -->
+<bean id="announcement01" class="acme.entities.announcements.Announcement">
+<property name= "title" value="Ejemplo de anuncio 1"/>
+<property name= "moment" value="2019/10/09 10:00"/>
+<property name= "moreInfo"><null/></property>
+<property name= "text" value="Descripción de un anuncio"/>
+</bean>
+  
+<bean id="announcement02" class="acme.entities.announcements.Announcement">
+<property name= "title" value="Anuncio 2"/>
+<property name= "moment" value="2019/09/09 12:15"/>
+<property name= "moreInfo" value="http://www.google.es"/>
+<property name= "text" value="Descripción de un anuncio"/>
+
+</bean>
+  
+<!--  Announcements -->
+
+<bean id="announcement01" class="acme.entities.announcements.Announcement">
+<property name="title" value="Announcement Sample 1"/>
+<property name="text" value="I'm happy!"/>
+<property name="moreInfo"><null/></property>
+<property name= "moment" value="2019/09/09 10:00"/>
+</bean>
+
+<bean id="announcement02" class="acme.entities.announcements.Announcement">
+<property name="title" value="Announcement Sample 2"/>
+<property name="text" value="I'm the master of my room!"/>
+<property name="moreInfo" value="http://www.example.com"/>
+<property name= "moment" value="2019/08/09 15:55"/>
+</bean>
+
+<bean id="announcement03" class="acme.entities.announcements.Announcement">
+<property name="title" value="Announcement Sample 3"/>
+<property name="text" value="I'm 20..."/>
+<property name="moreInfo" value="http://www.example.com"/>
+<property name= "moment" value="2019/09/07 00:00"/>
+</bean>
+  
+<bean id="announcement04" class="acme.entities.announcement.Announcement">
+<property name= "title" value="Tony Stark"/>
+<property name= "moment" value="2019/09/09 12:15"/>
+<property name= "moreInfo" value="https://github.com/angcabdom/Acme-Jobs"/>
+<property name= "text" value="Friday, what time is it?"/>
+</bean>
+
+<bean id="announcement05" class="acme.entities.announcement.Announcement">
+<property name= "title" value="Tony Stark 2"/>
+<property name= "moment" value="2019/09/09 10:15"/>
+<property name= "moreInfo">
+	<null/></property>
+<property name= "text" value="Friday, what time hfghf is it?"/>
+</bean>
+
+</beans>
+
