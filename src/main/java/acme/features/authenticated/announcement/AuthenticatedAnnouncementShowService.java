@@ -19,6 +19,7 @@ public class AuthenticatedAnnouncementShowService implements AbstractShowService
 	AuthenticatedAnnouncementRepository repository;
 
 
+
 	// AbstractListService<Authenticated, Announcemen> interface ------------
 
 	@Override
@@ -35,12 +36,13 @@ public class AuthenticatedAnnouncementShowService implements AbstractShowService
 		assert model != null;
 
 		request.unbind(entity, model, "moment", "title", "moreInfo", "text");
+
 	}
 
 	@Override
 	public Announcement findOne(final Request<Announcement> request) {
 		assert request != null;
-
+    
 		Announcement result;
 		int id;
 

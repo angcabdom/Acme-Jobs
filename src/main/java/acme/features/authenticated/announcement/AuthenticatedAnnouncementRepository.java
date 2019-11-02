@@ -17,4 +17,5 @@ public interface AuthenticatedAnnouncementRepository extends AbstractRepository 
 
 	@Query("select a from Announcement a where a.id = ?1")
 	Announcement findOneById(int id);
+
 }
