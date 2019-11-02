@@ -15,12 +15,6 @@ import acme.framework.services.AbstractListService;
 @Service
 public class AuthenticatedAnnouncementListService implements AbstractListService<Authenticated, Announcement> {
 
-	//internal
-	@Autowired
-	AuthenticatedAnnouncementRepository repository;
-	// interface
-
-
 	@Override
 	public boolean authorise(final Request<Announcement> request) {
 		assert request != null;
@@ -32,14 +26,18 @@ public class AuthenticatedAnnouncementListService implements AbstractListService
 		assert request != null;
 		assert entity != null;
 		assert model != null;
+
 		request.unbind(entity, model, "moment", "title");
 	}
 
 	@Override
 	public Collection<Announcement> findMany(final Request<Announcement> request) {
 		assert request != null;
+
 		Collection<Announcement> result;
 		result = this.repository.findManyAll();
+
 		return result;
 	}
+
 }

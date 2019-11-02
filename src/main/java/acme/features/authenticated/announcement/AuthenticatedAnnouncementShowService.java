@@ -13,13 +13,19 @@ import acme.framework.services.AbstractShowService;
 @Service
 public class AuthenticatedAnnouncementShowService implements AbstractShowService<Authenticated, Announcement> {
 
+	// Internal State ------------------------------------------------------
+
 	@Autowired
 	AuthenticatedAnnouncementRepository repository;
 
 
+
+	// AbstractListService<Authenticated, Announcemen> interface ------------
+
 	@Override
 	public boolean authorise(final Request<Announcement> request) {
 		assert request != null;
+
 		return true;
 	}
 
@@ -29,16 +35,20 @@ public class AuthenticatedAnnouncementShowService implements AbstractShowService
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "moment", "moreInfo", "text");
+		request.unbind(entity, model, "moment", "title", "moreInfo", "text");
+
 	}
 
 	@Override
 	public Announcement findOne(final Request<Announcement> request) {
 		assert request != null;
+    
 		Announcement result;
 		int id;
+
 		id = request.getModel().getInteger("id");
 		result = this.repository.findOneById(id);
+
 		return result;
 	}
 

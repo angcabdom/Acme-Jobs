@@ -49,6 +49,11 @@ master.menu.anonymous.javi-link = Enlace de Javi
 master.menu.anonymous.angel-link = Enlace de Ángel
 master.menu.anonymous.flor-link = Enlace de Flor
 
+# master.menu.authenticated ###################################################
+
+master.menu.announcement = Anuncios
+master.menu.announcements = Mostrar anuncios
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador

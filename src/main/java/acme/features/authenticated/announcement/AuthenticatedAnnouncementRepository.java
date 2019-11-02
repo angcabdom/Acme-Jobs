@@ -12,9 +12,10 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AuthenticatedAnnouncementRepository extends AbstractRepository {
 
-	@Query("select a from Announcement a where a.id= ?1")
-	Announcement findOneById(int id);
-
 	@Query("select a from Announcement a")
 	Collection<Announcement> findManyAll();
+
+	@Query("select a from Announcement a where a.id = ?1")
+	Announcement findOneById(int id);
+
 }

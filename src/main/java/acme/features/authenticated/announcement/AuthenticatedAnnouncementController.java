@@ -15,6 +15,7 @@ import acme.framework.entities.Authenticated;
 @Controller
 @RequestMapping("/authenticated/announcement/")
 public class AuthenticatedAnnouncementController extends AbstractController<Authenticated, Announcement> {
+
 	//	Internal state ------------
 
 	@Autowired

@@ -27,18 +27,15 @@ public class Announcement extends DomainEntity {
 	@NotBlank
 	private String				title;
 
-	@Temporal(TemporalType.TIMESTAMP)
-	@Past
-	private Date				moment;
+	@NotBlank
+	private String				text;
 
 	@URL
 	private String				moreInfo;
 
-	@NotBlank
-	private String				text;
+	@Temporal(TemporalType.TIMESTAMP)
+	@Past
+	private Date				moment;
 
-	// Derived Attributes
-
-	//Relationships
 
 }
