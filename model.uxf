@@ -377,7 +377,6 @@ has v</panel_attributes>
       <x>21</x>
       <y>350</y>
       <w>224</w>
-
       <h>70</h>
     </coordinates>
     <panel_attributes>Announcement
@@ -388,5 +387,23 @@ has v</panel_attributes>
 + text: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>35</x>
+      <y>504</y>
+      <w>224</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Offer
+--
++ title: String {NotBlank}
++ ticker: String {NotBlank, Unique, Pattern}
++ moment: Date {Temporal(TIMESTAMP),past}
++ deadline: Date {Temporal(TIMESTAMP),future}
++ text: String {NotBlank}
++ moneyMin: Money 
++ moneyMax: Money </panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
-
