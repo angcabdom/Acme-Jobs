@@ -1,3 +1,4 @@
+
 package acme.features.authenticated.announcement;
 
 import java.util.Collection;
@@ -13,6 +14,14 @@ import acme.framework.services.AbstractListService;
 
 @Service
 public class AuthenticatedAnnouncementListService implements AbstractListService<Authenticated, Announcement> {
+
+	// Internal State ------------------------------------------------------
+
+	@Autowired
+	AuthenticatedAnnouncementRepository repository;
+
+
+	// AbstractListService<Authenticated, Announcemen> interface ------------
 
 	@Override
 	public boolean authorise(final Request<Announcement> request) {
@@ -40,4 +49,3 @@ public class AuthenticatedAnnouncementListService implements AbstractListService
 	}
 
 }
-
