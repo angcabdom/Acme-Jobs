@@ -54,6 +54,9 @@ master.menu.anonymous.flor-link = Enlace de Flor
 master.menu.announcement = Anuncios
 master.menu.announcements = Mostrar anuncios
 
+master.menu.offer = Ofertas
+master.menu.offers = Mostrar ofertas
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
