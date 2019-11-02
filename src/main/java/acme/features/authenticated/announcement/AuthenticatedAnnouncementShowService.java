@@ -1,4 +1,3 @@
-
 package acme.features.authenticated.announcement;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,3 +52,4 @@ public class AuthenticatedAnnouncementShowService implements AbstractShowService
 	}
 
 }
+

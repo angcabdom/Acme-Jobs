@@ -1,4 +1,3 @@
-
 package acme.features.authenticated.announcement;
 
 import java.util.Collection;
@@ -41,3 +40,4 @@ public class AuthenticatedAnnouncementListService implements AbstractListService
 	}
 
 }
+

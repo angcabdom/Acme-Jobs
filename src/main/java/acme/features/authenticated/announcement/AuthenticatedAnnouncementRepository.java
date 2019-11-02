@@ -1,4 +1,3 @@
-
 package acme.features.authenticated.announcement;
 
 import java.util.Collection;
@@ -19,3 +18,4 @@ public interface AuthenticatedAnnouncementRepository extends AbstractRepository 
 	Announcement findOneById(int id);
 
 }
+

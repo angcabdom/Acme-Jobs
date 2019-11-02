@@ -1,4 +1,3 @@
-
 package acme.features.authenticated.announcement;
 
 import javax.annotation.PostConstruct;
@@ -33,3 +32,4 @@ public class AuthenticatedAnnouncementController extends AbstractController<Auth
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 	}
 }
+

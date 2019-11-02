@@ -1,4 +1,3 @@
-
 package acme.entities.announcements;
 
 import java.util.Date;
@@ -39,3 +38,4 @@ public class Announcement extends DomainEntity {
 
 
 }
+

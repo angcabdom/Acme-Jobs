@@ -170,7 +170,6 @@
 
 </bean>
   
-
 <!--  Announcements -->
 
 <bean id="announcement01" class="acme.entities.announcements.Announcement">
