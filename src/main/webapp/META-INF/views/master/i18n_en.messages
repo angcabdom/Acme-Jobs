@@ -54,6 +54,9 @@ master.menu.anonymous.flor-link = Flor link
 master.menu.announcement = Announcements
 master.menu.announcements = Show announcements
 
+master.menu.solicitude = Solicitudes
+master.menu.solicitudes = Show Solicitudes
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator

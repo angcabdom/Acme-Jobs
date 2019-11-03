@@ -8,5 +8,14 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
+authenticated.solicitude.form.label.title = Title
+authenticated.solicitude.form.label.moment = Moment
+authenticated.solicitude.form.label.dateLimit = Date Limit
+authenticated.solicitude.form.label.text = Text
+authenticated.solicitude.form.label.money = Money
+authenticated.solicitude.form.label.ticker = Ticker
 
-
+authenticated.solicitude.list.label.title = Title
+authenticated.solicitude.list.label.dateLimit = Date Limit
+authenticated.solicitude.list.label.money = Money
+authenticated.solicitude.list.label.ticker = Ticker
