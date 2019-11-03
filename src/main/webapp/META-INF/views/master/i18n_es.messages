@@ -54,6 +54,9 @@ master.menu.announcements = Mostrar anuncios
 master.menu.offer = Ofertas
 master.menu.offers = Mostrar ofertas
 
+master.menu.challenge = Retos
+master.menu.challenges = Mostrar retos
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
