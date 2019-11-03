@@ -29,6 +29,8 @@
 
     drop table if exists `caballero_bulletin`;
 
+    drop table if exists `company_record`;
+
     drop table if exists `consumer`;
 
     drop table if exists `correa_bulletin`;

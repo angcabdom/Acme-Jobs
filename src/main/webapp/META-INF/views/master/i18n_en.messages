@@ -54,6 +54,9 @@ master.menu.announcements = Show announcements
 master.menu.offer = Offers
 master.menu.offers = Show offers
 
+master.menu.company-record = Company record
+master.menu.company-records = Show company records
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
