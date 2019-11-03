@@ -406,4 +406,28 @@ has v</panel_attributes>
 + moneyMax: Money </panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>287</x>
+      <y>511</y>
+      <w>238</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Challenge
+--
++ title: String {NotBlank}
++ deadline: Date {Temporal(TIMESTAMP),future}
++ description: String {NotBlank}
++ goalGold: String {NotBlank}
++ rewardGold: String {NotBlank}
++ goalSilver: String {NotBlank}
++ rewardSilver: String {NotBlank}
++ goalBronze: String {NotBlank}
++ rewardBronze: String {NotBlank}
++ / gold: String {Transient}
++ / silver: String {Transient}
++ / bronze: String {Transient}</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
