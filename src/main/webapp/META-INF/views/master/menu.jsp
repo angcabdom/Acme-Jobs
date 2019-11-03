@@ -42,6 +42,10 @@
 			<acme:menu-suboption code="master.menu.morante-bulletins" action="/anonymous/morante-bulletin/list"/>
 			<acme:menu-suboption code="master.menu.morante-bulletin.create" action="/anonymous/morante-bulletin/create"/>
    		</acme:menu-option>
+   		
+   		<acme:menu-option code="master.menu.investorRecords" access="isAnonymous()">
+			<acme:menu-suboption code="master.menu.investor-records" action="/anonymous/investor-record/list"/>
+		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.announcement" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.announcements" action="/authenticated/announcement/list"/>

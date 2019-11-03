@@ -228,5 +228,27 @@
 <property name= "moneyMax" value="€ 1000"/>
 </bean>
 
+
+<!-- InvestorRecords -->
+<bean id="investorRecord01" class="acme.entities.investorRecords.InvestorRecord">
+<property name="name" value="Rafa"/>
+<property name="sector" value="Banking"/>
+<property name="statement" value="The investing statement 01"/>
+<property name="stars" value="3"/>
+</bean>
+
+<bean id="investorRecord02" class="acme.entities.investorRecords.InvestorRecord">
+<property name="name" value="Carmen"/>
+<property name="sector" value="Technology"/>
+<property name="statement" value="The investing statement 02"/>
+<property name="stars" value="4"/>
+</bean>
+
+<bean id="investorRecord03" class="acme.entities.investorRecords.InvestorRecord">
+<property name="name" value="John"/>
+<property name="sector" value="Tourism"/>
+<property name="statement" value="The investing statement 03"/>
+<property name="stars" value="1"/>
+</bean>
 </beans>
 

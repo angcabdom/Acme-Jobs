@@ -45,7 +45,9 @@ master.menu.anonymous.favourite-link = Favourite link
 master.menu.anonymous.javi-link = Javi link
 master.menu.anonymous.angel-link = Angel link
 master.menu.anonymous.flor-link = Flor link
-
+master.menu.investorRecords = Investor Records
+master.menu.investor-records = Investor Records
+master.menu-investor-record.create = Create Investor Record
 # master.menu.authenticated ###################################################
 
 master.menu.announcement = Announcements
