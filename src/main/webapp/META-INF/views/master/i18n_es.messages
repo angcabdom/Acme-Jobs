@@ -54,6 +54,12 @@ master.menu.announcements = Mostrar anuncios
 master.menu.offer = Ofertas
 master.menu.offers = Mostrar ofertas
 
+master.menu.company-record = Registros de empresas
+master.menu.company-records = Mostrar registros de empresas
+
+master.menu.challenge = Retos
+master.menu.challenges = Mostrar retos
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
