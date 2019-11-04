@@ -51,6 +51,10 @@
 			<acme:menu-suboption code="master.menu.offers" action="/authenticated/offer/list"/>
 		</acme:menu-option>
 		
+		<acme:menu-option code="master.menu.company-record" access="isAnonymous()">
+			<acme:menu-suboption code="master.menu.company-records" action="/anonymous/company-record/list"/>
+    </acme:menu-option>
+
 		<acme:menu-option code="master.menu.challenge" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.challenges" action="/authenticated/challenge/list"/>
 		</acme:menu-option>
