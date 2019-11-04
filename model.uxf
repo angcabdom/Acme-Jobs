@@ -299,7 +299,7 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>252</x>
+      <x>231</x>
       <y>350</y>
       <w>210</w>
       <h>70</h>
@@ -314,9 +314,9 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>42</x>
+      <x>0</x>
       <y>427</y>
-      <w>210</w>
+      <w>224</w>
       <h>70</h>
     </coordinates>
     <panel_attributes>GranjaBulletin
@@ -329,8 +329,8 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>287</x>
-      <y>434</y>
+      <x>231</x>
+      <y>427</y>
       <w>210</w>
       <h>70</h>
     </coordinates>
@@ -344,8 +344,8 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>504</x>
-      <y>357</y>
+      <x>448</x>
+      <y>350</y>
       <w>210</w>
       <h>70</h>
     </coordinates>
@@ -359,8 +359,8 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>525</x>
-      <y>434</y>
+      <x>448</x>
+      <y>427</y>
       <w>210</w>
       <h>70</h>
     </coordinates>
@@ -390,10 +390,10 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>14</x>
+      <x>0</x>
       <y>504</y>
       <w>224</w>
-      <h>63</h>
+      <h>112</h>
     </coordinates>
     <panel_attributes>Offer
 --
@@ -409,9 +409,9 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>287</x>
-      <y>511</y>
-      <w>182</w>
+      <x>231</x>
+      <y>504</y>
+      <w>210</w>
       <h>126</h>
     </coordinates>
     <panel_attributes>CompanyRecords
@@ -425,14 +425,15 @@ has v</panel_attributes>
 + email: String{NotBlank}
 + incorporated: Boolean{NotBlank}
 + stars: Integer</panel_attributes>
-   </element>
-   <element>
+    <additional_attributes/>
+  </element>
+  <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>288</x>
-      <y>512</y>
+      <x>665</x>
+      <y>350</y>
       <w>238</w>
-      <h>70</h>
+      <h>168</h>
     </coordinates>
     <panel_attributes>Challenge
 --
@@ -450,11 +451,11 @@ has v</panel_attributes>
 + / bronze: String {Transient}</panel_attributes>
     <additional_attributes/>
   </element>
-    <element>
+  <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>553</x>
-      <y>518</y>
+      <x>448</x>
+      <y>504</y>
       <w>189</w>
       <h>84</h>
     </coordinates>
@@ -466,5 +467,22 @@ has v</panel_attributes>
 + stars: Integer {Range(0,5)}</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>665</x>
+      <y>525</y>
+      <w>231</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>Solicitude
+--
++title: String{NotBlank}
++moment: Date{Temporal(TIMESTAMP),past}
++dateLimit:Date{Temporal(TIMESTAMP),future}
++text: String{NotBlank}
++money: Money
++ticker: String{NotBlank,Unique,Pattern}</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
-

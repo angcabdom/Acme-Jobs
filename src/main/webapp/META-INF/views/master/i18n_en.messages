@@ -61,6 +61,9 @@ master.menu.announcements = Show announcements
 master.menu.offer = Offers
 master.menu.offers = Show offers
 
+master.menu.solicitude = Solicitudes
+master.menu.solicitudes = Show Solicitudes
+
 master.menu.challenge = Challenges
 master.menu.challenges = Show challenges
 
