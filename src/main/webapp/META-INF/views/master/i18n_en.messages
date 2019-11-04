@@ -57,6 +57,9 @@ master.menu.offers = Show offers
 master.menu.company-record = Company record
 master.menu.company-records = Show company records
 
+master.menu.challenge = Challenges
+master.menu.challenges = Show challenges
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
