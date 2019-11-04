@@ -29,16 +29,16 @@
 
     drop table if exists `caballero_bulletin`;
 
-    drop table if exists `company_record`;
-
     drop table if exists `challenge`;
+
+    drop table if exists `company_record`;
 
     drop table if exists `consumer`;
 
     drop table if exists `correa_bulletin`;
 
     drop table if exists `granja_bulletin`;
-    
+
     drop table if exists `investor_record`;
 
     drop table if exists `morante_bulletin`;

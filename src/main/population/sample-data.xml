@@ -249,6 +249,7 @@
 <property name= "phone" value="036295"/>
 <property name= "email" value="intel@intel.com"/>
 <property name= "incorporated" value="True"/>
+</bean>
 
 <!--  Challenges -->
 
