@@ -43,6 +43,14 @@
 			<acme:menu-suboption code="master.menu.morante-bulletin.create" action="/anonymous/morante-bulletin/create"/>
    		</acme:menu-option>
 		
+    	<acme:menu-option code="master.menu.company-record" access="isAnonymous()">
+			<acme:menu-suboption code="master.menu.company-records" action="/anonymous/company-record/list"/>
+    </acme:menu-option>
+    
+    	<acme:menu-option code="master.menu.investorRecords" access="isAnonymous()">
+			<acme:menu-suboption code="master.menu.investor-records" action="/anonymous/investor-record/list"/>
+		</acme:menu-option>
+    
 		<acme:menu-option code="master.menu.announcement" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.announcements" action="/authenticated/announcement/list"/>
 		</acme:menu-option>
@@ -51,10 +59,6 @@
 			<acme:menu-suboption code="master.menu.offers" action="/authenticated/offer/list"/>
 		</acme:menu-option>
 		
-		<acme:menu-option code="master.menu.company-record" access="isAnonymous()">
-			<acme:menu-suboption code="master.menu.company-records" action="/anonymous/company-record/list"/>
-    </acme:menu-option>
-
 		<acme:menu-option code="master.menu.challenge" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.challenges" action="/authenticated/challenge/list"/>
 		</acme:menu-option>
