@@ -18,6 +18,6 @@
 <acme:list>
  <acme:list-column code="anonymous.company-record.list.label.name" path="name" width="40%"/>
  <acme:list-column code="anonymous.company-record.list.label.sector" path="sector" width="30%"/>
-  <acme:list-column code="anonymous.company-record.list.label.webSite" path="webSite" width="30%"/>
+  <acme:list-column code="anonymous.company-record.list.label.stars" path="stars" width="30%"/>
 </acme:list>
 
