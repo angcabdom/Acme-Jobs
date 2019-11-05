@@ -451,4 +451,38 @@ has v</panel_attributes>
 + / bronze: String {Transient}</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>448</x>
+      <y>504</y>
+      <w>189</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>InvestorRecord
+--
++ name: String {NotBlank}
++ sector: String {NotBlank}
++ statement: {NotBlank}
++ stars: Integer {Range(0,5)}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>665</x>
+      <y>525</y>
+      <w>231</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>Solicitude
+--
++title: String{NotBlank}
++moment: Date{Temporal(TIMESTAMP),past}
++dateLimit:Date{Temporal(TIMESTAMP),future}
++text: String{NotBlank}
++money: Money
++ticker: String{NotBlank,Unique,Pattern}</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
