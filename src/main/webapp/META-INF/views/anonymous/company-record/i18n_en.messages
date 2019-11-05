@@ -10,7 +10,7 @@
 
 anonymous.company-record.list.label.name = Name:
 anonymous.company-record.list.label.sector = Sector:
-anonymous.company-record.list.label.webSite = Web Site:
+anonymous.company-record.list.label.stars = Stars:
 
 anonymous.company-record.form.label.name = Name:
 anonymous.company-record.form.label.sector = Sector:
@@ -20,5 +20,6 @@ anonymous.company-record.form.label.webSite = Web Site:
 anonymous.company-record.form.label.phone = Phone:
 anonymous.company-record.form.label.email = Email:
 anonymous.company-record.form.label.incorporated = Incorporated:
+anonymous.company-record.form.label.stars = Stars:
 anonymous.company-record.form.button.return = Return
 

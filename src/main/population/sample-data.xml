@@ -238,6 +238,7 @@
 <property name= "phone" value="+183 (1436) 1937403629"/>
 <property name= "email" value="google@google.com"/>
 <property name= "incorporated" value="True"/>
+<property name= "stars" value="5"/>
 </bean>
 
 <bean id="CompanyRecord02" class="acme.entities.companyRecords.CompanyRecord">
@@ -249,7 +250,8 @@
 <property name= "phone" value="036295"/>
 <property name= "email" value="intel@intel.com"/>
 <property name= "incorporated" value="True"/>
-
+<property name= "stars" value="3"/>
+</bean>
 <!--  Challenges -->
 
 <bean id="challenge01" class="acme.entities.challenges.Challenge">

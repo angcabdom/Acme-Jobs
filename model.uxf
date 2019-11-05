@@ -424,13 +424,14 @@ has v</panel_attributes>
 + phone: String{Pattern, NotBlank}
 + email: String{NotBlank}
 + incorporated: Boolean{NotBlank}
-+ stars: Integer</panel_attributes>
-   </element>
-   <element>
++ stars: Integer{Range}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>288</x>
-      <y>512</y>
+      <x>287</x>
+      <y>511</y>
       <w>238</w>
       <h>70</h>
     </coordinates>
