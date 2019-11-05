@@ -1,5 +1,5 @@
 
-package acme.features.authenticated.solicitude;
+package acme.features.authenticated.request_;
 
 import javax.annotation.PostConstruct;
 
@@ -7,21 +7,21 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import acme.entities.solicitudes.Solicitude;
+import acme.entities.requests_.Request_;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Authenticated;
 
 @Controller
-@RequestMapping("/authenticated/solicitude/")
-public class AuthenticatedSolicitudeController extends AbstractController<Authenticated, Solicitude> {
+@RequestMapping("/authenticated/request_/")
+public class AuthenticatedRequest_Controller extends AbstractController<Authenticated, Request_> {
 	//	Internal state ------------
 
 	@Autowired
-	private AuthenticatedSolicitudeListService	listService;
+	private AuthenticatedRequest_ListService	listService;
 
 	@Autowired
-	private AuthenticatedSolicitudeShowService	showService;
+	private AuthenticatedRequest_ShowService	showService;
 
 
 	//	Constructors -------------

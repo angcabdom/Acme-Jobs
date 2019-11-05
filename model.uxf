@@ -306,7 +306,7 @@ has v</panel_attributes>
     </coordinates>
     <panel_attributes>Shout
 --
-+ moment: Date {Temporal(TIMESTAMP),past}
++ moment: Date {Temporal(TIMESTAMP),Past}
 + author: String {NotBlank}
 + text: String {NotBlank}</panel_attributes>
     <additional_attributes/>
@@ -321,7 +321,7 @@ has v</panel_attributes>
     </coordinates>
     <panel_attributes>GranjaBulletin
 --
-+ moment: Date {Temporal(TIMESTAMP),past}
++ moment: Date {Temporal(TIMESTAMP),Past}
 + author: String {NotBlank}
 + text: String {NotBlank}</panel_attributes>
     <additional_attributes/>
@@ -336,7 +336,7 @@ has v</panel_attributes>
     </coordinates>
     <panel_attributes>MoranteBulletin
 --
-+ moment: Date {Temporal(TIMESTAMP),past}
++ moment: Date {Temporal(TIMESTAMP),Past}
 + author: String {NotBlank}
 + text: String {NotBlank}</panel_attributes>
     <additional_attributes/>
@@ -351,7 +351,7 @@ has v</panel_attributes>
     </coordinates>
     <panel_attributes>CorreaBulletin
 --
-+ moment: Date {Temporal(TIMESTAMP),past}
++ moment: Date {Temporal(TIMESTAMP),Past}
 + author: String {NotBlank}
 + text: String {NotBlank}</panel_attributes>
     <additional_attributes/>
@@ -366,24 +366,8 @@ has v</panel_attributes>
     </coordinates>
     <panel_attributes>CaballeroBulletin
 --
-+ moment: Date {Temporal(TIMESTAMP),past}
++ moment: Date {Temporal(TIMESTAMP),Past}
 + author: String {NotBlank}
-+ text: String {NotBlank}</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>0</x>
-      <y>350</y>
-      <w>224</w>
-      <h>70</h>
-    </coordinates>
-    <panel_attributes>Announcement
---
-+ moment: Date {Temporal(TIMESTAMP),past}
-+ title: String {NotBlank}
-+ moreInfo: String {URL}
 + text: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
@@ -399,8 +383,8 @@ has v</panel_attributes>
 --
 + title: String {NotBlank}
 + ticker: String {NotBlank, Unique, Pattern}
-+ moment: Date {Temporal(TIMESTAMP),past}
-+ deadline: Date {Temporal(TIMESTAMP),future}
++ moment: Date {Temporal(TIMESTAMP),Past}
++ deadline: Date {Temporal(TIMESTAMP)}
 + text: String {NotBlank}
 + moneyMin: Money 
 + moneyMax: Money </panel_attributes>
@@ -438,7 +422,7 @@ has v</panel_attributes>
     <panel_attributes>Challenge
 --
 + title: String {NotBlank}
-+ deadline: Date {Temporal(TIMESTAMP),future}
++ deadline: Date {Temporal(TIMESTAMP)}
 + description: String {NotBlank}
 + goalGold: String {NotBlank}
 + rewardGold: String {NotBlank}
@@ -475,14 +459,30 @@ has v</panel_attributes>
       <w>231</w>
       <h>98</h>
     </coordinates>
-    <panel_attributes>Solicitude
+    <panel_attributes>Request_
 --
 +title: String{NotBlank}
-+moment: Date{Temporal(TIMESTAMP),past}
-+dateLimit:Date{Temporal(TIMESTAMP),future}
++moment: Date{Temporal(TIMESTAMP),Past}
++dateLimit:Date{Temporal(TIMESTAMP)}
 +text: String{NotBlank}
 +money: Money
 +ticker: String{NotBlank,Unique,Pattern}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>350</y>
+      <w>224</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Announcement
+--
++ moment: Date {Temporal(TIMESTAMP),Past}
++ title: String {NotBlank}
++ moreInfo: String {URL}
++ text: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
