@@ -485,4 +485,18 @@ has v</panel_attributes>
 +ticker: String{NotBlank,Unique,Pattern}</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>448</x>
+      <y>595</y>
+      <w>189</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>Configuration
+--
++ spanThreshold: Double
++ spanWords: Collection&lt;String&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>

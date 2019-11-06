@@ -68,6 +68,19 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `configuration` (
+       `id` integer not null,
+        `version` integer not null,
+        `spam_threshold` double precision,
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `configuration_spam_words` (
+       `configuration_id` integer not null,
+        `spam_words` varchar(255)
+    ) engine=InnoDB;
+
     create table `consumer` (
        `id` integer not null,
         `version` integer not null,
@@ -201,6 +214,11 @@
        add constraint FK_h52w0f3wjoi68b63wv9vwon57 
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
+
+    alter table `configuration_spam_words` 
+       add constraint `FK5lk29cpqe3960a943x8x8j4yh` 
+       foreign key (`configuration_id`) 
+       references `configuration` (`id`);
 
     alter table `consumer` 
        add constraint FK_6cyha9f1wpj0dpbxrrjddrqed 
