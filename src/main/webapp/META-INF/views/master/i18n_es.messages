@@ -69,6 +69,9 @@ master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
 
+master.menu.configuration = Configuración
+master.menu.configurations = Configuraciones
+
 # master.menu.provider ########################################################
 
 master.menu.provider = Proveedor
