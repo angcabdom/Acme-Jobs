@@ -301,8 +301,8 @@
 <property name="stars" value="1"/>
 </bean>
 
-<!--  Solicitude  -->
-<bean id="solicitude01" class="acme.entities.solicitudes.Solicitude">
+<!--  Request_  -->
+<bean id="request_01" class="acme.entities.requests_.Request_">
 <property name= "title" value="Trabajo de fontanero"/>
 <property name= "moment" value="2019/09/09 10:15"/>
 <property name= "dateLimit" value="2019/11/28 10:30"/>
@@ -311,7 +311,7 @@
 <property name= "ticker" value="RXXXX-99109"/>
 </bean>
 
-<bean id="solicitude02" class="acme.entities.solicitudes.Solicitude">
+<bean id="request_02" class="acme.entities.requests_.Request_">
 <property name= "title" value="Trabajo de fontanero2"/>
 <property name= "moment" value="2019/09/09 10:14"/>
 <property name= "dateLimit" value="2019/11/28 10:36"/>

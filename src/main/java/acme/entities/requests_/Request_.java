@@ -1,5 +1,5 @@
 
-package acme.entities.solicitudes;
+package acme.entities.requests_;
 
 import java.util.Date;
 
@@ -7,7 +7,6 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.validation.constraints.Future;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
@@ -20,7 +19,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Solicitude extends DomainEntity {
+public class Request_ extends DomainEntity {
 
 	//serialisation identifier
 	private static final long	serialVersionUID	= 1L;
@@ -35,7 +34,6 @@ public class Solicitude extends DomainEntity {
 	private Date				moment;
 
 	@Temporal(TemporalType.TIMESTAMP)
-	@Future
 	private Date				dateLimit;
 
 	@NotBlank
