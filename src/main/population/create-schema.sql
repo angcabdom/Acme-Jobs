@@ -211,3 +211,4 @@
        add constraint FK_b1gwnjqm6ggy9yuiqm0o4rlmd 
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
+
