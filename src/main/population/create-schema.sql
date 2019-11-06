@@ -148,7 +148,6 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-
     create table `solicitude` (
        `id` integer not null,
         `version` integer not null,
