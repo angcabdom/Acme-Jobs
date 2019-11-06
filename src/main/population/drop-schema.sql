@@ -1,5 +1,4 @@
 
-
     alter table `administrator` 
        drop 
        foreign key FK_2a5vcjo3stlfcwadosjfq49l1;
@@ -48,11 +47,10 @@
 
     drop table if exists `provider`;
 
-    drop table if exists `request_`;
-
     drop table if exists `shout`;
+
+    drop table if exists `solicitude`;
 
     drop table if exists `user_account`;
 
     drop table if exists `hibernate_sequence`;
-
