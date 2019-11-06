@@ -64,6 +64,7 @@
         `name` varchar(255),
         `phone` varchar(255),
         `sector` varchar(255),
+        `stars` integer,
         `web_site` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
@@ -151,16 +152,7 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `shout` (
-       `id` integer not null,
-        `version` integer not null,
-        `author` varchar(255),
-        `moment` datetime(6),
-        `text` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
-    create table `solicitude` (
+    create table `request_` (
        `id` integer not null,
         `version` integer not null,
         `date_limit` datetime(6),
@@ -170,6 +162,15 @@
         `text` varchar(255),
         `ticker` varchar(255),
         `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `shout` (
+       `id` integer not null,
+        `version` integer not null,
+        `author` varchar(255),
+        `moment` datetime(6),
+        `text` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -194,8 +195,8 @@
     alter table `offer` 
        add constraint UK_iex7e8fs0fh89yxpcnm1orjkm unique (`ticker`);
 
-    alter table `solicitude` 
-       add constraint UK_q78p2ovityf8xu94wlxohds3t unique (`ticker`);
+    alter table `request_` 
+       add constraint UK_4kaq4lybvdlfnbqjbdbwjlqkl unique (`ticker`);
 
     alter table `user_account` 
        add constraint UK_castjbvpeeus0r8lbpehiu0e4 unique (`username`);
