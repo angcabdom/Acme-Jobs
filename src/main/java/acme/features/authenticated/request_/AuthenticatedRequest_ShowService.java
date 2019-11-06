@@ -1,34 +1,34 @@
 
-package acme.features.authenticated.solicitude;
+package acme.features.authenticated.request_;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.solicitudes.Solicitude;
+import acme.entities.requests_.Request_;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AuthenticatedSolicitudeShowService implements AbstractShowService<Authenticated, Solicitude> {
+public class AuthenticatedRequest_ShowService implements AbstractShowService<Authenticated, Request_> {
 	// Internal State ------------------------------------------------------
 
 	@Autowired
-	AuthenticatedSolicitudeRepository repository;
+	AuthenticatedRequest_Repository repository;
 
 
 	// AbstractListService<Authenticated, Solicitude> interface ------------
 
 	@Override
-	public boolean authorise(final Request<Solicitude> request) {
+	public boolean authorise(final Request<Request_> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public void unbind(final Request<Solicitude> request, final Solicitude entity, final Model model) {
+	public void unbind(final Request<Request_> request, final Request_ entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -38,10 +38,10 @@ public class AuthenticatedSolicitudeShowService implements AbstractShowService<A
 	}
 
 	@Override
-	public Solicitude findOne(final Request<Solicitude> request) {
+	public Request_ findOne(final Request<Request_> request) {
 		assert request != null;
 
-		Solicitude result;
+		Request_ result;
 		int id;
 
 		id = request.getModel().getInteger("id");

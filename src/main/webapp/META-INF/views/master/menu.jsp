@@ -50,6 +50,10 @@
     	<acme:menu-option code="master.menu.investorRecords" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.investor-records" action="/anonymous/investor-record/list"/>
 		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.announcement" access="isAnonymous()">
+			<acme:menu-suboption code="master.menu.announcements" action="/anonymous/announcement/list"/>
+		</acme:menu-option>
     
 		<acme:menu-option code="master.menu.announcement" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.announcements" action="/authenticated/announcement/list"/>
@@ -59,8 +63,8 @@
 			<acme:menu-suboption code="master.menu.offers" action="/authenticated/offer/list"/>
 		</acme:menu-option>
 		
-		<acme:menu-option code="master.menu.solicitude" access="isAuthenticated()">
-			<acme:menu-suboption code="master.menu.solicitudes" action="/authenticated/solicitude/list"/>
+		<acme:menu-option code="master.menu.request_" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.requests_" action="/authenticated/request_/list"/>
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.challenge" access="isAuthenticated()">
@@ -73,6 +77,8 @@
 		
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
+			<acme:menu-suboption code="master.menu.announcements" action="/administrator/announcement/list"/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>

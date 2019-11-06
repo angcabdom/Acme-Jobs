@@ -19,5 +19,5 @@
 
  <acme:list-column code="anonymous.investor-record.list.label.name" path="name" width="20%"/>
  <acme:list-column code="anonymous.investor-record.list.label.sector" path="sector" width="20%"/>
-  <acme:list-column code="anonymous.investor-record.list.label.stars" path="stars" width="20%"/>
+  <acme:list-column code="anonymous.investor-record.list.label.statement" path="statement" width="20%"/>
 </acme:list> 

@@ -51,7 +51,6 @@ master.menu.company-records = Show company records
 
 master.menu.investorRecords = Investor Records
 master.menu.investor-records = Investor Records
-master.menu-investor-record.create = Create Investor Record
 
 # master.menu.authenticated ###################################################
 
@@ -61,8 +60,8 @@ master.menu.announcements = Show announcements
 master.menu.offer = Offers
 master.menu.offers = Show offers
 
-master.menu.solicitude = Solicitudes
-master.menu.solicitudes = Show Solicitudes
+master.menu.request_ = Request
+master.menu.requests_ = Show Requests
 
 master.menu.challenge = Challenges
 master.menu.challenges = Show challenges
